@@ -1,0 +1,24 @@
+body{
+    background-color: pink;
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    text-align: center;
+}
+.botao1{
+    text-align: center;
+    background-color: yellow;
+    border-radius: 25px;
+    width: 400px;
+    height: 100px;
+    margin: 2% 0 0 0;
+}
+.imge{
+    background-color: pink;
+}
+.tudo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}

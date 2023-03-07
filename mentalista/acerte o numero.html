@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mentalista</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <h1>Jogo do mentalista</h1>
+    <h2>Advinhe o número</h2>
+    <header class="tudo">
+        <input type="button" value="iniciar" onclick="iniciar()" id="começar" class="botao1">
+        <img src="Ilustração-cérebro+1.png" alt="" class="img">
+    </header>
+    <script>
+ function iniciar(){
+    var numeroSecreto = parseInt(Math.random()*1001);
+        var iterador = 0;
+            console.log(numeroSecreto);
+        if(numeroSecreto == 0){
+        numeroSecreto+1
+        }
+        //enquanto o número for diferente
+        while(chute != numeroSecreto){
+            if(iterador != 0){
+                alert('Você já fez ' + iterador + ' tentativas!')
+            }
+            var chute = prompt('Digite um número entre 0 e 1000:');
+            //se o chute for igual ao número secreto
+            if (chute == numeroSecreto){
+                alert('Acertou!')
+            } else if (chute > numeroSecreto){
+                alert('Errou... o número secreto é menor que '+ chute)
+            } else if(chute < numeroSecreto){
+                alert( 'Errou... o número secreto é maior que '+ chute)
+                iterador += 1;
+            }}}
+    </script>
+</body>
+</html>
